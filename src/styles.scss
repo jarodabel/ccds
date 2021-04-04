@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+$dark-purple: #2f1f72;
+$light-purple: #ae87e4;
+
+.is-purple {
+  background-color: $dark-purple;
+}
+.is-light-purple {
+  background-color: $light-purple;
+}
+
+.has-text-light-purple {
+  color: $light-purple !important;
+}
+.has-text-dark-purple {
+  color: $dark-purple !important;
+}
+
+.filter-light-purple {
+  filter: invert(58%) sepia(58%) saturate(499%) hue-rotate(217deg) brightness(92%) contrast(93%);
+}
