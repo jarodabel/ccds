@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AttributionComponent } from './attribution/attribution.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 import { DonateComponent } from './donate/donate.component';
 import { HomeComponent } from './home/home.component';
 import { MissionComponent } from './mission/mission.component';
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path: 'attribution',
     component: AttributionComponent,
+  },
+  {
+    path: 'contact-us',
+    component: ContactUsComponent
   },
   {
     path: '**',

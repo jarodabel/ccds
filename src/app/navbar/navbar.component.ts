@@ -14,7 +14,10 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  toggleMenu(bool: boolean): void {
-    this.menuVisible = bool;
+  toggleMenu(): void {
+    this.menuVisible = !this.menuVisible;
+  }
+  toggleMenuOff() {
+    this.menuVisible = false;
   }
 }

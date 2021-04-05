@@ -1,3 +1,18 @@
+@import "../../styles-variables.scss";
 .nav-item {
   color:white;
+  border-bottom: $light-purple 1px solid;
+}
+.nav-item:last-child {
+  border-bottom: none;
+}
+
+
+.navbar-item:hover{
+  background-color: $light-purple;
+  color: $dark-purple;
+}
+.navbar-item:focus-within{
+  background-color: $dark-purple;
+  color: $light-purple;
 }

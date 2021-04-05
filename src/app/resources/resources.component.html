@@ -1,1 +1,28 @@
-<p>resources works!</p>
+<section class="section is-small is-key-lime">
+  <h1 class="title has-text-dark-purple">Resources</h1>
+  <div class="content has-text-dark-purple">
+    Organizations in our area ready to help.
+  </div>
+</section>
+<nav class='level'></nav>
+<section class="section">
+  <div class="container">
+    <div class="tile is-ancestor" *ngFor="let group of resourceGroups">
+      <div class="tile is-parent" *ngFor="let res of group">
+        <div class="tile is-child box" (click)="openLink(res)">
+          <span class="icon is-pulled-right">
+            <fa-icon [icon]="externalLink"></fa-icon>
+          </span>
+          <p class="title">{{res.title}}</p>
+          <p class="subtitle">{{res.description}}</p>
+          <div class="content">
+            <a [href]="res.link" target="_blank" class="is-pulled-right">Visit</a>
+          </div>
+          <div class=tags>
+            <span class="tag is-info is-light" *ngFor="let label of res.labels">{{label}}</span>&nbsp;
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

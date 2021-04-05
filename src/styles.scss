@@ -1,6 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
-$dark-purple: #2f1f72;
-$light-purple: #ae87e4;
+@import "styles-variables.scss";
+
+html, body{
+  height: 100vh;
+  // background-color: $light-purple
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+body > footer {
+    margin-top: auto;
+}
+
+footer {
+  background-color: unset !important;
+}
 
 .is-purple {
   background-color: $dark-purple;
@@ -8,12 +24,30 @@ $light-purple: #ae87e4;
 .is-light-purple {
   background-color: $light-purple;
 }
+.is-yellow {
+  background-color: $light-yellow;
+}
+.is-key-lime {
+  background-color: $key-lime;
+}
+.is-dark-blue {
+  background-color: $dark-blue;
+}
+.is-light-blue {
+  background-color: $light-blue;
+}
 
 .has-text-light-purple {
   color: $light-purple !important;
 }
 .has-text-dark-purple {
   color: $dark-purple !important;
+}
+.has-text-dark-blue {
+  color: $dark-blue !important;
+}
+.has-text-key-lime {
+  color: $key-lime !important;
 }
 
 .filter-light-purple {

@@ -8,39 +8,51 @@
     </p>
   </div>
 </section>
-<section class="section is-small">
-  <h1 class="title">Give</h1>
-  <div class="block">
-    Donations can be made in the form of any size or any brand of baby diapers, toddler pull-ups, and/or wipes. We will accept
-    new and opened packages of diapers.
-  </div>
-  <div class="block">
-    We will also gladly accept monetary donations.<a> (donate here)</a>
+<section class="section">
+  <div class="container">
+    <div class="tile is-ancestor">
+      <div class="tile is-parent">
+        <div class="tile is-child box is-light-purple" routerLink="donate">
+          <span class="icon is-pulled-right has-text-key-lime">
+            <fa-icon [icon]="externalLink"></fa-icon>
+          </span>
+          <p class="title has-text-key-lime">Give</p>
+          <p class="subtitle has-text-dark-purple">Donations can be made in the form of any size or any brand of baby
+            diapers, toddler
+            pull-ups, and/or wipes. We will accept
+            new and opened packages of diapers.</p>
+          <p class="subtitle has-text-dark-purple">We will also gladly accept monetary donations.</p>
+        </div>
+      </div>
+      <div class="tile is-parent">
+        <div class="tile is-child box is-light-purple" routerLink="resources">
+          <span class="icon is-pulled-right has-text-key-lime">
+            <fa-icon [icon]="externalLink"></fa-icon>
+          </span>
+          <p class="title has-text-key-lime">Receive</p>
+          <p class="subtitle has-text-dark-purple">Families who are participating in a partnering program can receive
+            diapers, as requested,
+            on a monthly basis, if
+            supplies are available.</p>
+          <div class="content">
+          </div>
+        </div>
+      </div>
+      <div class="tile is-parent">
+        <div class="tile is-child box is-light-purple" routerLink="contact-us">
+          <span class="icon is-pulled-right has-text-key-lime">
+            <fa-icon [icon]="externalLink"></fa-icon>
+          </span>
+          <p class="title has-text-key-lime">Partner</p>
+          <p class="subtitle has-text-dark-purple"> Service providers may request partnership to have access to the
+            diaper bank for the
+            families they serve.
+          </p>
+          <div class="content">
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
-<section class="section is-small">
-  <h1 class="title">Receive</h1>
-  <div class="block">
-    Families who are participating in a partnering program can receive diapers, as requested, on a monthly basis, if
-    supplies are available.
-  </div>
-</section>
-<section class="section is-small">
-  <h1 class="title">Partner</h1>
-  <div class="block">
-    Service providers may request partnership to have access to the diaper bank for the families they serve.
-  </div>
-</section>
-<section class="section is-small is-light-purple">
-  <h1 class="title">Meet Us For Pickup or Delivery</h1>
-  <div class="block">
-    <address>
-      All Aboard Foundation<br>
-      315 West 3rd<br>
-      Pittsburg, KS 66762
-    </address>
-    <br>
-    <a href="https://goo.gl/maps/yEbHiBADL565KTAfA" target="_blank">Google Maps</a><br>
-    <a href="https://maps.apple.com/?address=315%20W%20Third%20St,%20Pittsburg,%20KS%20%2066762,%20United%20States&auid=8336893021216004699&ll=37.409904,-94.709260&lsp=9902&q=All%20Aboard%20Foundation&_ext=ChoKBQgEEOIBCgQIBRADCgUIBhDfAQoECAoQABImKeBWi4rks0JAMYsWOyvBrVfAOV4sseYKtUJAQf0VPOAHrVfAUAQ%3D" target="_blank">Apple Maps</a>
-  </div>
-</section>
+<app-contact-us-section></app-contact-us-section>
