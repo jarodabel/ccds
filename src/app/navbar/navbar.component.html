@@ -11,7 +11,7 @@
     </a>
   </div>
 
-  <div id="navbarBasicExample" class="navbar-menu is-purple" [ngClass]="{'is-active': menuVisible}">
+  <div class="navbar-menu is-purple" [ngClass]="{'is-active': menuVisible}">
     <div class="navbar-start">
       <a class="navbar-item nav-item is-purple" routerLink='mission' (click)="toggleMenuOff()">
         Mission
@@ -29,5 +29,14 @@
         About Us
       </a>
     </div>
+    <!-- <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-link" (click)="login()">
+            <strong>Login</strong>
+          </a>
+        </div>
+      </div>
+    </div> -->
   </div>
 </nav>
