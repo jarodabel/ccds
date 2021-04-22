@@ -1,0 +1,71 @@
+<section class="section is-small is-key-lime">
+  <div class="title has-text-dark-purple">
+    Inventory Home
+  </div>
+  <div class="subtitle has-text-dark-purple">
+    Manage Stock
+  </div>
+  <div class="block ">
+    <div class="field is-grouped is-pulled-right">
+      <p class="control">
+        <button class="button is-light-purple has-text-dark-purple" (click)="inventoryChange(true)">
+          ADD
+        </button>
+      </p>
+      <p class="control">
+        <button class="button is-light-purple has-text-dark-purple" (click)="inventoryChange(true)">
+          DISTRIBUTE
+        </button>
+      </p>
+    </div>
+  </div>
+</section>
+<nav class="level"></nav>
+<div class="modal" [ngClass]="{'is-active': scanSection}" *ngIf="scanSection">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Diaper Scanner</p>
+      <button class="delete" aria-label="close" (click)="inventoryChange(false)"></button>
+    </header>
+    <section class="modal-card-body">
+      <div id="interactive" class="viewport">
+        <!-- QuaggaJS will populate this element -->
+      </div>
+    </section>
+    <footer class="modal-card-foot is-justify-content-flex-end">
+      <!-- <button class="button is-success">Save changes</button> -->
+      <button class="button is-light-purple has-text-dark-purple" (click)="inventoryChange(false)">
+        Cancel
+      </button>
+    </footer>
+  </div>
+</div>
+
+<nav class="level"></nav>
+<nav class="level">
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">Total Diapers</p>
+      <p class="title">3,456</p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">new born</p>
+      <p class="title">123</p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">Followers</p>
+      <p class="title">456K</p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">Likes</p>
+      <p class="title">789</p>
+    </div>
+  </div>
+</nav>

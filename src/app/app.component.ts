@@ -10,7 +10,9 @@ import { UserService } from './services/user.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
+
   constructor(private userService: UserService) {}
+
   ngOnInit(): void {
     const firebaseConfig = {
       apiKey: 'AIzaSyALFUjcDkp21gBhP4IyT2gkD347JRritw8',
